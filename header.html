@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<tittle>header</tittle>
+<style>
+ *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        nav>ul>li{
+            position: relative;
+            display: inline-block;
+            width: 200px;
+        }
+        nav>ul{
+            text-align: center;
+            background-color: green;
+            height: 90px;
+            line-height: 90px;
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+           
+        }
+        li a:hover{
+            display: block;
+            background-color: chocolate;
+            
+            
+        }
+        nav>ul>li>ul{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            list-style-type: none;
+            display: none;
+        }
+        nav>ul>li:hover>ul{
+            display: block;
+            background-color: teal;
+        }
+</style>
+</head>
+<body>
+ <nav>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">service</a>
+                <ul>
+                    <li><a href="#">service-1</a></li>
+                    <li><a href="#">service-2</a></li>
+                    <li><a href="#">service-3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
